@@ -55,6 +55,8 @@ exec('git status --porcelain=v1', (err, stdout, stderr) => {
       SHIFT_TAB: 'cyclePrevious',
       HOME: 'first',
       END: 'last',
+      g: 'first',
+      G: 'last',
       BACKSPACE: 'cancel',
       DELETE: 'cancel',
     }
