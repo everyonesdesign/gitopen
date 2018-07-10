@@ -37,7 +37,7 @@ exec('git status --porcelain=v1', (err, stdout, stderr) => {
     } else if (key === 'c') {
       // copy
       const file = getFileName(menu.getState().selectedText);
-      exec(`echo ${file} | pbcopy`);
+      exec(`printf ${file} | pbcopy`);
       exit();
     }
   });
